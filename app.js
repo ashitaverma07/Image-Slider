@@ -14,7 +14,20 @@
 
     buttons.forEach(function(button){
         button.addEventListener("click", function(e){
-            if
+            if(button.classList.contains("btn-left")){
+                counter--
+                if(counter < 0){
+                    counter = pictures.length - 1
+                }
+                imgDiv.style.backgroundImage = `url('./images/${pictures[counter]}.jpg')`
+            }
+            if(button.classList.contains("btn-right")){
+                counter++
+                if(counter > pictures.length - 1){
+                    counter = 0
+                }
+                imgDiv.style.backgroundImage = `url('./images/${pictures[counter]}.jpg')`
+            }
         })
     })
 
