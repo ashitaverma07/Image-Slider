@@ -7,6 +7,15 @@
         "5",
         "6",
     ];
-    const buttons = document.querySelectorAll(".btn");
+    const buttons = document.querySelectorAll(".btn")
+    const imgDiv = document.querySelector(".img-container")
+
+    let counter = 0
+
+    buttons.forEach(function(button){
+        button.addEventListener("click", function(e){
+            if
+        })
+    })
 
 })();
